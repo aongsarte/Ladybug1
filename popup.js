@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 /**
- * Get the current URL.
+ * Get the current URL. Not really working huh
  *
  * @param {function(string)} callback - called when the URL of the current tab
  *   is found.

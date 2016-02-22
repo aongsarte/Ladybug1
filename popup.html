@@ -2,24 +2,12 @@
 <!-- This page is shown when the extension button is clicked -->
 <html hola_ext_inject = "disabled">
 <head>
+  <link rel="stylesheet" type="text/css" href="ladybug.css" media="screen" />
   <title>Getting Started Extension Popup</title>
-  <style>
-      body{
-        font-family: "Segoe UI", "Lucinda Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-      #status{
-        /*avoid an excessivley wide status text*/
-        white-: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-      }
-  </style>
   <script src="popup.js"></script>
-  <style type="text/css"></style>
 </head>
 <body>
+  <button type="button"> Click Me!!</button>
   <div id="status"></div>
   <img id="image-result" hidden>
 </body>

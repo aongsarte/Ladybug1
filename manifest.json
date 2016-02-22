@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "GSE",
-  "description": "This extension shows a Google image search result for the current page",
+  "name": "Ladybug",
+  "description": "This extension will one day be a study guide",
   "version": "1.0",
 
   "browser_action" : {

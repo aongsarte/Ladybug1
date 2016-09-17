@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="Ladybug">
+<head>
+<script type="text/javascript">
+    function URLController($scope){
+        $scope.newSite=""
+        $scope.sites=['www.facebook.com'];
+        $scope.addSite=function(){
+             $scope.sites.push($scope.newSite);
+        }
+    }
+</script>
+</head>
+<body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+<div ng-controller="URLController">
+    Enter A URL : <input type="text" ng-model="newSite">
+    <button ng-click="addSite()">Add</button>
+    <hr/>
+    List of Blacklisted Sites :
+    <ul><li ng-repeat="site in sites">{{site}}</li></ul>
+</div>
+<br>
+<br>
+<div style="float:right">
+<a href="popup.html">
+  <button type="button">Home</button>
+</a>
+</div>
+</body>
+</html>

@@ -1,18 +1,9 @@
 <!doctype html>
 <html ng-app="Ladybug">
 <head>
-<script type="text/javascript">
-    function URLController($scope){
-        $scope.newSite=""
-        $scope.sites=['www.facebook.com'];
-        $scope.addSite=function(){
-             $scope.sites.push($scope.newSite);
-        }
-    }
-</script>
+<!--link rel="stylesheet" media="all" href="css/ladybug.css"-->
 </head>
 <body>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
 <div ng-controller="URLController">
     Enter A URL : <input type="text" ng-model="newSite">
     <button ng-click="addSite()">Add</button>
@@ -23,7 +14,7 @@
 <br>
 <br>
 <div style="float:right">
-<a href="popup.html">
+<a href="../popup.html">
   <button type="button">Home</button>
 </a>
 </div>
